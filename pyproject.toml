@@ -1,5 +1,5 @@
 [project]
-name = "python_template"
+name = "isaac_lab_env"
 version = "0.2.0"
 authors = [{ name = "Austin Gregg-Smith", email = "blooop@gmail.com" }]
 description = "A python package template"
@@ -9,28 +9,22 @@ license = "MIT"
 dependencies = []
 
 [project.urls]
-Source = "https://github.com/blooop/python_template"
-Home = "https://github.com/blooop/python_template"
+Source = "https://github.com/blooop/isaac_lab_env"
+Home = "https://github.com/blooop/isaac_lab_env"
 
 [tool.pixi.project]
 channels = ["conda-forge"]
 platforms = ["linux-64"]
 
 [tool.pixi.dependencies]
-python = ">=3.10"
+python = "==3.10"
 
 [tool.pixi.feature.py310.dependencies]
 python = "3.10.*"
-[tool.pixi.feature.py311.dependencies]
-python = "3.11.*"
-[tool.pixi.feature.py312.dependencies]
-python = "3.12.*"
-[tool.pixi.feature.py313.dependencies]
-python = "3.13.*"
 
 
 [tool.pixi.pypi-dependencies]
-python_template = { path = ".", editable = true }
+isaac_lab_env = { path = ".", editable = true }
 
 [project.optional-dependencies]
 test = [
@@ -48,15 +42,12 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build]
-include= ["python_template"]
+include= ["isaac_lab_env"]
 
 # Environments
 [tool.pixi.environments]
 default = {features = ["test"], solve-group = "default" }
 py310 = ["py310","test"]
-py311 = ["py311","test"]
-py312 = ["py312","test"]
-py313 = ["py313","test"]
 
 
 [tool.pixi.tasks]
