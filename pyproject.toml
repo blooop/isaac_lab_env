@@ -21,10 +21,18 @@ python = "==3.10"
 
 [tool.pixi.feature.py310.dependencies]
 python = "3.10.*"
-
+[tool.pixi.feature.py310.pypi-options]
+extra-index-urls = ["https://download.pytorch.org/whl/cu121","https://pypi.nvidia.com"]
 
 [tool.pixi.pypi-dependencies]
 isaac_lab_env = { path = ".", editable = true }
+torch="*"
+isaacsim-rl="*"
+isaacsim-replicator="*"
+isaacsim-extscache-physics="*"
+isaacsim-extscache-kit-sdk="*"
+isaacsim-extscache-kit="*"
+isaacsim-app="*"
 
 [project.optional-dependencies]
 test = [
