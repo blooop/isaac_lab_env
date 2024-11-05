@@ -1,6 +1,6 @@
 # Changelog
 
-## python_template
+## isaac_lab_env
 
 ## [0.0.0]
 
