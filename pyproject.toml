@@ -16,23 +16,28 @@ Home = "https://github.com/blooop/isaac_lab_env"
 channels = ["conda-forge"]
 platforms = ["linux-64"]
 
+[tool.pixi.system-requirements]
+libc = { family="glibc", version="2.34" }
+
 [tool.pixi.dependencies]
-python = "==3.10"
+python = "3.10.*"
+pip = "==24.2"
 
 [tool.pixi.feature.py310.dependencies]
 python = "3.10.*"
 [tool.pixi.feature.py310.pypi-options]
 extra-index-urls = ["https://download.pytorch.org/whl/cu121","https://pypi.nvidia.com"]
-
-[tool.pixi.pypi-dependencies]
-isaac_lab_env = { path = ".", editable = true }
+[tool.pixi.feature.py310.pypi-dependencies]
 torch="*"
-isaacsim-rl="*"
+# isaacsim-rl="*"
 isaacsim-replicator="*"
 isaacsim-extscache-physics="*"
 isaacsim-extscache-kit-sdk="*"
 isaacsim-extscache-kit="*"
 isaacsim-app="*"
+
+[tool.pixi.pypi-dependencies]
+isaac_lab_env = { path = ".", editable = true }
 
 [project.optional-dependencies]
 test = [
@@ -80,6 +85,7 @@ ci-push = {depends_on=["format","ruff-lint","update-lock","ci","push"]}
 clear-pixi = "rm -rf .pixi pixi.lock"
 setup-git-merge-driver = "git config merge.ourslock.driver true"
 update-from-template-repo = "./scripts/update_from_template.sh"
+isaacsim = "isaacsim"
 
 [tool.pylint]
 extension-pkg-whitelist = ["numpy"]
