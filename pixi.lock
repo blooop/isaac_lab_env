@@ -55,7 +55,6 @@ environments:
       - pypi: https://pypi.nvidia.com/isaacsim-app/isaacsim_app-4.2.0.2-cp310-none-manylinux_2_34_x86_64.whl#sha256=51224da7d74179055456f7a6448e940f0a186249eaaa2b77e96f368a95dc06cb
       - pypi: https://pypi.nvidia.com/isaacsim-benchmark/isaacsim_benchmark-4.2.0.2-cp310-none-manylinux_2_34_x86_64.whl#sha256=2de38ae6a6fc0637fa12bc29f668f3f04dad6f7c639a370b0300a48c174c098d
       - pypi: https://pypi.nvidia.com/isaacsim-core/isaacsim_core-4.2.0.2-cp310-none-manylinux_2_34_x86_64.whl#sha256=ca73ce9d2ff9d693cd8fcf44e67569a2e0cbc44009e58c39506bc851d23ad2a6
-      - pypi: https://pypi.nvidia.com/isaacsim-extscache-kit/isaacsim_extscache_kit-4.2.0.2-cp310-none-manylinux_2_34_x86_64.whl#sha256=2ff59ec1c8fedc7505aff54d6e1a2c15739874307a97effd33680ef27f973c7a
       - pypi: https://pypi.nvidia.com/isaacsim-extscache-kit-sdk/isaacsim_extscache_kit_sdk-4.2.0.2-cp310-none-manylinux_2_34_x86_64.whl#sha256=edceebb3325b3c4bdaf1e5b19bb1251c895daaf59348990726bfee3ca0ce7e60
       - pypi: https://pypi.nvidia.com/isaacsim-extscache-physics/isaacsim_extscache_physics-4.2.0.2-cp310-none-manylinux_2_34_x86_64.whl#sha256=61f13f6d1b0aeef9ab522a7c3c7ffd414ac390840ae855a80fa49d558990481b
       - pypi: https://pypi.nvidia.com/isaacsim-gui/isaacsim_gui-4.2.0.2-cp310-none-manylinux_2_34_x86_64.whl#sha256=0fa88e3613499670a45dbda745ebc486426b2bafa4c868ce23e44e7396095f66
@@ -572,7 +571,7 @@ packages:
   name: isaac-lab-env
   version: 0.2.0
   path: .
-  sha256: 98e7c3550167d87a2ab26abfad23bbb674b25a14867d94d87e4db6595d1a72e3
+  sha256: c20bef8fff6d5a7cf21aebea243b15c0b26cfce446725b2448bc26f0a1cef16c
   requires_dist:
   - black>=23,<=24.10.0 ; extra == 'test'
   - pylint>=3.2.5,<=3.3.1 ; extra == 'test'
@@ -614,12 +613,6 @@ packages:
   - psutil
   - boto3
   - pyyaml
-  requires_python: ==3.10.*
-- kind: pypi
-  name: isaacsim-extscache-kit
-  version: 4.2.0.2
-  url: https://pypi.nvidia.com/isaacsim-extscache-kit/isaacsim_extscache_kit-4.2.0.2-cp310-none-manylinux_2_34_x86_64.whl#sha256=2ff59ec1c8fedc7505aff54d6e1a2c15739874307a97effd33680ef27f973c7a
-  sha256: 2ff59ec1c8fedc7505aff54d6e1a2c15739874307a97effd33680ef27f973c7a
   requires_python: ==3.10.*
 - kind: pypi
   name: isaacsim-extscache-kit-sdk
