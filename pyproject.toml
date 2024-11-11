@@ -29,12 +29,12 @@ extra-index-urls = ["https://download.pytorch.org/whl/cu121","https://pypi.nvidi
 [tool.pixi.pypi-dependencies]
 isaac_lab_env = { path = ".", editable = true }
 torch="*"
-isaacsim-rl="*"
-isaacsim-replicator="*"
-isaacsim-extscache-physics="*"
-isaacsim-extscache-kit-sdk="*"
-isaacsim-extscache-kit="*"
-isaacsim-app="*"
+isaacsim-rl="==4.2.0.2"
+isaacsim-replicator="==4.2.0.2"
+isaacsim-extscache-physics="==4.2.0.2"
+isaacsim-extscache-kit-sdk="==4.2.0.2"
+isaacsim-extscache-kit="==4.2.0.2"
+isaacsim-app="==4.2.0.2"
 
 
 [project.optional-dependencies]
