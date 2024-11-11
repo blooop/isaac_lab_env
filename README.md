@@ -1,5 +1,5 @@
 # isaac_lab_env
-A template repo for python projects that is set up using [pixi](https://pixi.sh). 
+A template repo for isaacsim projects that is set up using [pixi](https://pixi.sh). 
 
 ## Continuous Integration Status
 
