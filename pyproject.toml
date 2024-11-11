@@ -33,7 +33,7 @@ isaacsim-rl="==4.2.0.2"
 isaacsim-replicator="==4.2.0.2"
 isaacsim-extscache-physics="==4.2.0.2"
 isaacsim-extscache-kit-sdk="==4.2.0.2"
-# isaacsim-extscache-kit="==4.2.0.2"
+isaacsim-extscache-kit="==4.2.0.2"
 isaacsim-app="==4.2.0.2"
 
 
