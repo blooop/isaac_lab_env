@@ -641,12 +641,12 @@ packages:
   name: isaac-lab-env
   version: 0.2.0
   path: .
-  sha256: 0527fcb7ab9250775eab6361dbb4f4adfa0d1403936f08b57751d0bd51b5b6c5
+  sha256: 025df8020b856f3bab563441c104d1aaaf4be9229d2ca876d254806976a31024
   requires_dist:
   - isaacsim==4.2.0.2
-  - isaacsim-extscache-kit
-  - isaacsim-extscache-kit-sdk
-  - isaacsim-extscache-physics
+  - isaacsim-extscache-kit==4.2.0.2
+  - isaacsim-extscache-kit-sdk==4.2.0.2
+  - isaacsim-extscache-physics==4.2.0.2
   - black>=23,<=24.10.0 ; extra == 'test'
   - pylint>=3.2.5,<=3.3.1 ; extra == 'test'
   - pytest-cov>=4.1,<=6.0.0 ; extra == 'test'
