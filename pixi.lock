@@ -127,6 +127,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/98/29/69aa56dc0b2eb2602b553881e34243475ea2afd9699be042316842788ff5/triton-3.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/26/9f/ad63fc0248c5379346306f8668cda6e2e2e9c95e01216d2b8ffd9ff037d0/typing_extensions-4.12.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ce/d9/5f4c13cecde62396b0d3fe530a50ccea91e7dfc1ccf0e09c228841bb5ba8/urllib3-2.2.3-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/be/24/b2f69c0adb60d4c5d3c5413454ab869ed275db52da4be02eaa9d1a149191/uv-0.5.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: .
 packages:
 - kind: conda
@@ -641,12 +642,13 @@ packages:
   name: isaac-lab-env
   version: 0.2.0
   path: .
-  sha256: 025df8020b856f3bab563441c104d1aaaf4be9229d2ca876d254806976a31024
+  sha256: d3ab7c6a99f6fc520760d816fdeee6a4fb9ba6801928057591585cc0f3f98154
   requires_dist:
   - isaacsim==4.2.0.2
   - isaacsim-extscache-kit==4.2.0.2
   - isaacsim-extscache-kit-sdk==4.2.0.2
   - isaacsim-extscache-physics==4.2.0.2
+  - uv
   - black>=23,<=24.10.0 ; extra == 'test'
   - pylint>=3.2.5,<=3.3.1 ; extra == 'test'
   - pytest-cov>=4.1,<=6.0.0 ; extra == 'test'
@@ -1786,6 +1788,12 @@ packages:
   - h2>=4,<5 ; extra == 'h2'
   - pysocks>=1.5.6,!=1.5.7,<2.0 ; extra == 'socks'
   - zstandard>=0.18.0 ; extra == 'zstd'
+  requires_python: '>=3.8'
+- kind: pypi
+  name: uv
+  version: 0.5.1
+  url: https://files.pythonhosted.org/packages/be/24/b2f69c0adb60d4c5d3c5413454ab869ed275db52da4be02eaa9d1a149191/uv-0.5.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  sha256: 4d1ec4a1bc19b523a84fc1bf2a92e9c4d982c831d3da450af71fc3057999d456
   requires_python: '>=3.8'
 - kind: conda
   name: wheel
