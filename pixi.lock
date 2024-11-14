@@ -634,7 +634,7 @@ packages:
   name: isaac-lab-env
   version: 0.2.0
   path: .
-  sha256: 7bec87b46f7541ceba09dd28fc4e0e9f082e76530f6bd619ec6930dc4e9b7162
+  sha256: 705101ce1677d964de44f5a4ac6065eb94236e47918ba7a1dadb735a535d70e8
   requires_dist:
   - isaacsim==4.2.0.2
   - isaacsim-extscache-kit==4.2.0.2
