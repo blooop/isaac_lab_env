@@ -58,6 +58,7 @@ default = {features = ["test"], solve-group = "default" }
 
 [tool.pixi.tasks]
 #Project Tasks
+setup = "./IsaacLab/isaaclab.sh -i"
 isaacsim = "isaacsim omni.isaac.sim.python.kit"
 
 #CI Tasks
