@@ -16,4 +16,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: rocker
-        run: rockerc
+        run: pip install rockerc[extensions]; rockerc
