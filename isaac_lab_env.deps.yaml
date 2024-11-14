@@ -1,3 +1,6 @@
+env_isaac:
+  - OMNI_KIT_ACCEPT_EULA=yes
+
 apt_tools:
   - git
   - git-lfs
