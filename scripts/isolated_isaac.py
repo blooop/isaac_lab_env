@@ -4,7 +4,9 @@
 #   "isaacsim==4.2.0.2",
 #   "isaacsim-extscache-kit==4.2.0.2",
 #   "isaacsim-extscache-kit-sdk==4.2.0.2",
-#   "isaacsim-extscache-physics==4.2.0.2"
+#   "isaacsim-extscache-physics==4.2.0.2",
+#   "isaacsim-robot-setup==4.2.0.2",
+#   "isaacsim-robot-motion==4.2.0.2"
 # ]
 # ///
 
