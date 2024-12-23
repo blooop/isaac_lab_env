@@ -17,7 +17,7 @@ import subprocess
 def main() -> None:
     try:
         os.environ["OMNI_KIT_ACCEPT_EULA"] = "yes"
-        subprocess.run(["isaacsim", "omni.isaac.sim.python.kit"], check=True)
+        subprocess.run(["isaacsim", "omni.isaac.sim.kit"], check=True)
     except subprocess.CalledProcessError as e:
         print(f"Command 'isaacsim' failed with exit code {e.returncode}")
     else:
