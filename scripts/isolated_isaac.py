@@ -13,3 +13,7 @@ import subprocess
 
 os.environ["OMNI_KIT_ACCEPT_EULA"] = "yes"
 subprocess.run(["isaacsim", "omni.isaac.sim.kit"], check=True)
+
+# # raw commands
+# isaacsim omni.isaac.sim.kit
+# isaacsim omni.isaac.sim.python.kit
