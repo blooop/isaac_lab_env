@@ -11,3 +11,6 @@ pip_language-toolchain:
   - uv #use uv instead of pip
   - pip #update to the latest pip
   - pre-commit
+
+pip_bencher:
+  - git+https://github.com/dyson-ai/bencher.git@feature/equal_greatest_versions
