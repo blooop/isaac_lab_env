@@ -36,13 +36,13 @@ isaac_lab_env = { path = ".", editable = true }
 
 [project.optional-dependencies]
 test = [
-  "pylint>=3.2.5,<=3.3.1",
+  "pylint>=3.2.5,<=3.3.4",
   "pytest-cov>=4.1,<=6.0.0",
-  "pytest>=7.4,<=8.3.3",
-  "hypothesis>=6.104.2,<=6.116.0",
-  "ruff>=0.5.0,<=0.7.2",
-  "coverage>=7.5.4,<=7.6.4",
-  "pre-commit<=4.0.1"
+  "pytest>=7.4,<=8.3.4",
+  "hypothesis>=6.104.2,<=6.124.8",
+  "ruff>=0.5.0,<=0.9.4",
+  "coverage>=7.5.4,<=7.6.10",
+  "pre-commit<=4.1.0"
 ]
 
 [build-system]
