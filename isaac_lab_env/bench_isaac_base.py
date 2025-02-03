@@ -1,11 +1,16 @@
 from isaacsim import SimulationApp
 
-simulation_app = SimulationApp({"headless": False})  # Can also run as headless.
-
+simulation_app = SimulationApp({
+    "headless": False,
+    "exts": [
+        "omni.kit.capture"  # Enable the video capture extension
+    ]
+})
 from omni.isaac.core import World
 from omni.isaac.core.objects import DynamicCuboid
 import bencher as bch
 import numpy as np
+import omni.kit.capture  # Import the capture module
 
 
 class BenchIsaacBase(bch.ParametrizedSweep):
@@ -45,7 +50,10 @@ class BenchIsaacBase(bch.ParametrizedSweep):
             print("Cube position is : " + str(position))
             print("Cube's orientation is : " + str(orientation))
             print("Cube's linear velocity is : " + str(linear_velocity))
-            self.world.step(render=True)  # Execute one physics step and one rendering step
+            # Execute one physics step and one rendering step
+            self.world.step(
+                render=True
+            )  
 
         return super().__call__(**kwargs)
 
@@ -57,11 +65,7 @@ class BenchIsaacBase(bch.ParametrizedSweep):
 
 if __name__ == "__main__":
     run_cfg = bch.BenchRunCfg()
-    run_cfg.level=3
+    run_cfg.level = 3
     bench = BenchIsaacBase(simulation_app).to_bench()
     bench.plot_sweep()
     bench.report.show()
-    bench.worker_class_instance.exit()
-
-    while True:
-        pass
