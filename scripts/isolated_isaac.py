@@ -1,7 +1,8 @@
 #!/usr/bin/env -S uv run
 # /// script
+# requires-python = ">=3.10"
 # dependencies = [
-#   "isaacsim[all,extscache]==4.5.0"
+#   "isaacsim[all,extscache]==4.5.0",
 # ]
 # ///
 
