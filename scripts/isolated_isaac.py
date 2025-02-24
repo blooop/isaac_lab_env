@@ -1,8 +1,11 @@
 #!/usr/bin/env -S uv run
 # /// script
+# requires-python = "==3.10"
 # dependencies = [
 #   "isaacsim[all,extscache]==4.5.0"
 # ]
+# [[tool.uv.index]]
+# url = "https://pypi.nvidia.com"
 # ///
 
 import os
