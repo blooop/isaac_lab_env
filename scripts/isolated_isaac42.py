@@ -1,6 +1,6 @@
 #!/usr/bin/env -S uv run
 # /// script
-# requires-python = "==3.10"
+# requires-python = ">=3.10"
 # dependencies = [
 #   "isaacsim==4.2.0.2",
 #   "isaacsim-extscache-kit==4.2.0.2",
