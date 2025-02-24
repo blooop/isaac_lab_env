@@ -4,6 +4,9 @@
 # dependencies = [
 #   "isaacsim[all,extscache]==4.5.0",
 # ]
+# # You may need this
+# # [[tool.uv.index]]
+# # url = "https://pypi.nvidia.com"
 # ///
 
 import os
