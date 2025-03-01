@@ -8,10 +8,10 @@ license = "MIT"
 
 requires-python = ">=3.10,<3.11"
 
-dependencies = ["isaacsim==4.2.0.2",
-              "isaacsim-extscache-kit==4.2.0.2",
-              "isaacsim-extscache-kit-sdk==4.2.0.2",
-              "isaacsim-extscache-physics==4.2.0.2"
+dependencies = ["isaacsim==4.5.0.0",
+              "isaacsim-extscache-kit==4.5.0.0",
+              "isaacsim-extscache-kit-sdk==4.5.0.0",
+              "isaacsim-extscache-physics==4.5.0.0"
               ]
 
 [project.urls]
