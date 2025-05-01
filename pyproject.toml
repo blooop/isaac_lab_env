@@ -8,10 +8,10 @@ license = "MIT"
 
 requires-python = ">=3.10,<3.11"
 
-dependencies = ["isaacsim==4.2.0.2",
-              "isaacsim-extscache-kit==4.2.0.2",
-              "isaacsim-extscache-kit-sdk==4.2.0.2",
-              "isaacsim-extscache-physics==4.2.0.2"
+dependencies = ["isaacsim==4.5.0.0",
+              "isaacsim-extscache-kit==4.5.0.0",
+              "isaacsim-extscache-kit-sdk==4.5.0.0",
+              "isaacsim-extscache-physics==4.5.0.0"
               ]
 
 [project.urls]
@@ -36,13 +36,13 @@ isaac_lab_env = { path = ".", editable = true }
 
 [project.optional-dependencies]
 test = [
-  "pylint>=3.2.5,<=3.3.4",
-  "pytest-cov>=4.1,<=6.0.0",
-  "pytest>=7.4,<=8.3.4",
-  "hypothesis>=6.104.2,<=6.124.8",
-  "ruff>=0.5.0,<=0.9.4",
-  "coverage>=7.5.4,<=7.6.10",
-  "pre-commit<=4.1.0"
+  "pylint>=3.2.5,<=3.3.6",
+  "pytest-cov>=4.1,<=6.1.1",
+  "pytest>=7.4,<=8.3.5",
+  "hypothesis>=6.104.2,<=6.131.9",
+  "ruff>=0.5.0,<=0.11.7",
+  "coverage>=7.5.4,<=7.8.0",
+  "pre-commit<=4.2.0"
 ]
 
 [build-system]
